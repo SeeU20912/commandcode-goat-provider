@@ -20,7 +20,7 @@
 ## 安装
 
 ### 方式一：VSIX
-在 [Releases](https://github.com/SeeU-studio/commandcode-goat-provider/releases) 下载最新 `.vsix`，
+在 [Releases](https://github.com/SeeU20912/commandcode-goat-provider/releases) 下载最新 `.vsix`，
 在 VS Code 中 `Ctrl+Shift+P` → `Extensions: Install from VSIX...` 选择文件。
 
 ### 方式二：市场安装

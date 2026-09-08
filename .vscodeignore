@@ -7,3 +7,5 @@ out/test/**
 **/*.ts
 *.vsix
 *.log
+*.txt
+PUBLISH.md

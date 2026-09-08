@@ -17,6 +17,12 @@
 
 > 若实际注册的 Publisher 或仓库名与此不同，先改 `package.json` 里的
 > `publisher` / `repository.url` 再发布。
+>
+> ⚠️ **GitHub 仓库真实账号是 `SeeU20912`**（不是 `SeeU-studio`）。下方所有
+> GitHub 路径均已改为 `https://github.com/SeeU20912/commandcode-goat-provider`。
+> 而 **Publisher ID（`seeu-studio`）是 VS Code 市场后台的唯一标识**，
+> 与 GitHub 账号无关，独立保留；请确认你创建 Publisher 时用的市场账号
+> 是否也叫 `SeeU Studio`（display name 可随意，ID 必须一致）。
 
 ---
 
@@ -44,7 +50,7 @@ git init
 git add -A
 git commit -m "feat: Command Code GOAT provider for Copilot"
 git branch -M main
-git remote add origin https://github.com/SeeU-studio/commandcode-goat-provider.git
+git remote add origin https://github.com/SeeU20912/commandcode-goat-provider.git
 git push -u origin main
 ```
 
