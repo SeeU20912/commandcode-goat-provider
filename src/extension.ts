@@ -104,7 +104,7 @@ export function activate(context: vscode.ExtensionContext): void {
     // --- Open settings ---
     context.subscriptions.push(
         vscode.commands.registerCommand("commandcode.openSettings", () => {
-            vscode.commands.executeCommand("workbench.action.openSettings", "@ext:local.commandcode-goat-provider");
+            vscode.commands.executeCommand("workbench.action.openSettings", "@ext:local.commandcode-goat-bridge");
         })
     );
 }

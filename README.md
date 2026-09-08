@@ -85,7 +85,7 @@ GOAT 套餐有 5小时 ($14)、每周 ($35)、月度 ($70) 三个滚动额度窗
 npm install
 npm run compile      # tsc 编译
 npm run build        # 打包 .vsix
-code --install-extension commandcode-goat-provider.vsix --force
+code --install-extension commandcode-goat-bridge.vsix --force
 ```
 
 发布到市场：见 [PUBLISH.md](PUBLISH.md)

@@ -9,7 +9,7 @@
 
 | 项 | 值 |
 |---|---|
-| 扩展名 | `commandcode-goat-provider` |
+| 扩展名 | `commandcode-goat-bridge` |
 | Publisher ID | `seeu-studio`（已写入 package.json，**市场要求全小写**） |
 | 扩展显示名 | Command Code GOAT Provider for Copilot |
 | 版本 | 0.1.0 |
@@ -86,7 +86,7 @@ npm run publish
 ```
 
 看到 `DONE  Published xxx` 即成功。几分钟后可在
-**<https://marketplace.visualstudio.com/items?itemName=seeu-studio.commandcode-goat-provider>** 查看。
+**<https://marketplace.visualstudio.com/items?itemName=seeu-studio.commandcode-goat-bridge>** 查看。
 
 ### 常见发布错误
 
@@ -104,7 +104,7 @@ npm run publish
 若不想用命令行/PAT，也可以：
 
 1. 本地打包：`npx @vscode/vsce package --allow-missing-repository`
-   （生成 `commandcode-goat-provider.vsix`）
+   （生成 `commandcode-goat-bridge.vsix`）
 2. 到 **<https://marketplace.visualstudio.com/manage/>** → 你的 Publisher → **New extension → Visual Studio Code**
 3. 上传 `.vsix` 并填写市场信息（描述、分类、图标自动读取）
 
