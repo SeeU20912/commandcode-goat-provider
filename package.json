@@ -1,0 +1,148 @@
+{
+  "name": "commandcode-goat-provider",
+  "publisher": "seeu-studio",
+  "displayName": "Command Code GOAT Provider for Copilot",
+  "description": "Use your Command Code GOAT subscription (DeepSeek V4 Flash, Kimi K2.7, GLM-5.2, Qwen 3.8, Gemini Flash, GPT-5.6 Sol and 30+ models) directly in GitHub Copilot Chat.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#0f172a",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeeU-studio/commandcode-goat-provider"
+  },
+  "bugs": {
+    "url": "https://github.com/SeeU-studio/commandcode-goat-provider/issues"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "copilot",
+    "github-copilot",
+    "language-models",
+    "llm",
+    "commandcode",
+    "command-code",
+    "openai-compatible",
+    "goat",
+    "deepseek",
+    "kimi",
+    "glm",
+    "qwen",
+    "thinking"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "languageModelChatProviders": [
+      {
+        "vendor": "commandcode",
+        "displayName": "Command Code GOAT",
+        "managementCommand": "commandcode.setApiKey"
+      }
+    ],
+    "commands": [
+      {
+        "command": "commandcode.setApiKey",
+        "category": "Command Code",
+        "title": "设置 API Key"
+      },
+      {
+        "command": "commandcode.clearApiKey",
+        "category": "Command Code",
+        "title": "清除 API Key"
+      },
+      {
+        "command": "commandcode.openUsage",
+        "category": "Command Code",
+        "title": "打开官网用量页"
+      },
+      {
+        "command": "commandcode.checkUsage",
+        "category": "Command Code",
+        "title": "查看本次会话用量"
+      },
+      {
+        "command": "commandcode.updateModelList",
+        "category": "Command Code",
+        "title": "更新模型列表"
+      },
+      {
+        "command": "commandcode.openSettings",
+        "category": "Command Code",
+        "title": "打开设置"
+      }
+    ],
+    "configuration": {
+      "title": "Command Code GOAT",
+      "properties": {
+        "commandcode.apiBaseUrl": {
+          "type": "string",
+          "default": "https://api.commandcode.ai/provider/v1",
+          "description": "Command Code Provider API base URL (OpenAI-compatible)."
+        },
+        "commandcode.requestTimeout": {
+          "type": "number",
+          "default": 600000,
+          "minimum": 10000,
+          "description": "Timeout in ms for each chat request."
+        },
+        "commandcode.showUsageInStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Command Code usage percentage in the status bar."
+        },
+        "commandcode.usageRefreshInterval": {
+          "type": "number",
+          "default": 5,
+          "minimum": 1,
+          "maximum": 60,
+          "description": "Minutes between background usage refreshes."
+        },
+        "commandcode.enableAutoModelDiscovery": {
+          "type": "boolean",
+          "default": true,
+          "description": "Fetch live model list from /models and merge with the built-in GOAT catalog."
+        },
+        "commandcode.showDeprecatedModels": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show models that are no longer served."
+        },
+        "commandcode.additionalModels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Extra model IDs (e.g. 'deepseek/deepseek-v4-pro') to add to the picker."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build": "npx @vscode/vsce package --allow-missing-repository -o commandcode-goat-provider.vsix",
+    "install:local": "npm run compile && code --install-extension commandcode-goat-provider.vsix",
+    "publish": "npx @vscode/vsce publish -p $VSCE_PAT"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/vscode": "^1.116.0",
+    "typescript": "^5.9.2"
+  }
+}
