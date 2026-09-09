@@ -3,7 +3,7 @@
   "publisher": "seeu-studio",
   "displayName": "Command Code GOAT Provider for Copilot",
   "description": "Use your Command Code GOAT subscription (DeepSeek V4 Flash, Kimi K2.7, GLM-5.2, Qwen 3.8, Gemini Flash, GPT-5.6 Sol and 30+ models) directly in GitHub Copilot Chat.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.116.0"
   },

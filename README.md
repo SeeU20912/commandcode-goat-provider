@@ -26,12 +26,23 @@
 ### 方式二：市场安装
 在扩展市场搜索 **Command Code GOAT Provider**（发布后可用）。
 
+> **⚠️ 安装 / 更新 / 替换扩展后，必须先重载窗口才能生效**
+> （`Ctrl+Shift+P` → `Developer: Reload Window`，或直接重启 VS Code）。
+>
+> 从**其它扩展 ID 的旧版桥接扩展**切换过来时，还要**重新执行一次 Set API Key**——
+> API Key 按扩展 ID 隔离存储（SecretStorage），不会自动迁移。
+
 ## 快速开始
+
+> 刚安装 / 更新完，先 `Ctrl+Shift+P` → **Developer: Reload Window** 重载一次再继续。
 
 1. 打开命令面板运行 **Command Code: Set API Key**
 2. 粘贴你的 Command Code API Key（在 <https://commandcode.ai/settings/keys> 创建，与 `cmdc` 通用）
 3. 打开 Copilot Chat → 模型下拉选择任意 `*@commandcode` 模型
 4. 开聊！
+
+> 💡 若设置 Key 后第一次对话报错（如 *Autopilot recovered from a request error*），
+> 多半是扩展未重载导致 provider 未激活——重载窗口后再试即可。
 
 ## 配置项
 
@@ -70,7 +81,11 @@ GOAT 套餐有 5小时 ($14)、每周 ($35)、月度 ($70) 三个滚动额度窗
 模型目录 + 自动发现，无需装其它同类扩展。卸载旧桥接扩展即可。
 
 **Q: 模型不显示？**
-1) 确认已执行 Set API Key；2) 执行 `Command Code: Update Model List`；3) 重启 VS Code。
+1) 确认已执行 Set API Key；2) 执行 `Command Code: Update Model List`；3) 重载窗口 / 重启 VS Code。
+
+**Q: 安装 / 更新 / 替换扩展后不生效？**
+扩展需重载窗口才激活（VS Code 机制）。`Ctrl+Shift+P` → `Developer: Reload Window`；
+从旧 ID 版本替换过来时同时重设一次 API Key。
 
 **Q: 报 403 upgrade_required？**
 你的 Command Code 套餐不含 API 权限（Go 套餐不含）。需要 GOAT / Pro / Max / Provider 任一。
