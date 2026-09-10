@@ -12,7 +12,7 @@
 | 扩展名 | `commandcode-goat-bridge` |
 | Publisher ID | `seeu-studio`（已写入 package.json，**市场要求全小写**） |
 | 扩展显示名 | Command Code GOAT Provider for Copilot |
-| 版本 | 0.1.0 |
+| 版本 | 0.1.2 |
 | 目标仓库 | `https://github.com/SeeU-studio/commandcode-goat-provider` |
 
 > 若实际注册的 Publisher 或仓库名与此不同，先改 `package.json` 里的
