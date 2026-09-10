@@ -8,4 +8,5 @@ out/test/**
 *.vsix
 *.log
 *.txt
+*.bat
 PUBLISH.md

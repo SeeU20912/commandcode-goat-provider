@@ -29,10 +29,11 @@ export interface GoatModelMeta {
 
 export const GOAT_CATALOG: readonly GoatModelMeta[] = [
     // DeepSeek
-    { id: "deepseek/deepseek-v4-flash", name: "DeepSeek V4 Flash", vendor: "DeepSeek", contextWindow: 1_000_000, reasoning: true, toolCall: true },
-    { id: "deepseek/deepseek-v4-flash-vision-exp", name: "DeepSeek V4 Flash Vision", vendor: "DeepSeek", contextWindow: 1_000_000, vision: true, reasoning: true, toolCall: true },
+    { id: "deepseek/deepseek-v4.1-flash", name: "DeepSeek V4.1 Flash", vendor: "DeepSeek", contextWindow: 1_000_000, vision: true, reasoning: true, toolCall: true },
+    { id: "deepseek/deepseek-v4-flash", name: "DeepSeek V4 Flash (latest)", vendor: "DeepSeek", contextWindow: 1_000_000, reasoning: true, toolCall: true },
+    { id: "deepseek/deepseek-v4-flash-vision-exp", name: "DeepSeek V4 Flash Vision (exp)", vendor: "DeepSeek", contextWindow: 1_000_000, vision: true, reasoning: true, toolCall: true },
     { id: "deepseek/deepseek-v4-flash-fast", name: "DeepSeek V4 Flash Fast", vendor: "DeepSeek", contextWindow: 1_000_000, reasoning: true, toolCall: true },
-    { id: "deepseek/deepseek-v4-pro", name: "DeepSeek V4 Pro", vendor: "DeepSeek", contextWindow: 1_000_000, reasoning: true, toolCall: true },
+    { id: "deepseek/deepseek-v4-pro", name: "DeepSeek V4 Pro (latest)", vendor: "DeepSeek", contextWindow: 1_000_000, reasoning: true, toolCall: true },
     // Kimi (Moonshot AI)
     { id: "moonshotai/Kimi-K3", name: "Kimi K3", vendor: "Moonshot AI", contextWindow: 1_000_000, vision: true, reasoning: true, toolCall: true },
     { id: "moonshotai/Kimi-K2.7-Code", name: "Kimi K2.7 Code", vendor: "Moonshot AI", contextWindow: 256_000, vision: true, reasoning: true, toolCall: true },
@@ -54,6 +55,7 @@ export const GOAT_CATALOG: readonly GoatModelMeta[] = [
     { id: "Qwen/Qwen3.7-Max", name: "Qwen 3.7 Max", vendor: "Alibaba", contextWindow: 1_000_000, reasoning: true, toolCall: true },
     { id: "Qwen/Qwen3.7-Plus", name: "Qwen 3.7 Plus", vendor: "Alibaba", contextWindow: 1_000_000, vision: true, reasoning: true, toolCall: true },
     { id: "Qwen/Qwen3.7-Flash", name: "Qwen 3.7 Flash", vendor: "Alibaba", contextWindow: 1_000_000, vision: true, reasoning: true, toolCall: true },
+    { id: "Qwen/Qwen3.6-Max-Preview", name: "Qwen 3.6 Max Preview", vendor: "Alibaba", contextWindow: 200_000, reasoning: true, toolCall: true },
     { id: "Qwen/Qwen3.6-Plus", name: "Qwen 3.6 Plus", vendor: "Alibaba", contextWindow: 200_000, vision: true, reasoning: true, toolCall: true },
     // Tencent
     { id: "tencent/hy3-paid", name: "Tencent Hy3", vendor: "Tencent", contextWindow: 262_000, reasoning: true, toolCall: true },
@@ -89,6 +91,8 @@ export const GOAT_CATALOG: readonly GoatModelMeta[] = [
     { id: "poolside/laguna-s-2.1-free", name: "Laguna S 2.1 (free)", vendor: "Poolside", contextWindow: 256_000, reasoning: true, toolCall: true },
     // Meituan (free while it lasts)
     { id: "meituan/LongCat-2.0:free", name: "LongCat 2.0 (free)", vendor: "Meituan", contextWindow: 1_000_000, reasoning: true, toolCall: true },
+    // InclusionAI (partner deal)
+    { id: "inclusionai/ling-3.0-flash-sante:free", name: "Ling 3.0 Flash Sante (free)", vendor: "InclusionAI", contextWindow: 262_144, reasoning: true, toolCall: true },
     // Xiaomi
     { id: "xiaomi/mimo-v2.5", name: "MiMo V2.5", vendor: "Xiaomi", contextWindow: 1_000_000, vision: true, toolCall: true },
     { id: "xiaomi/mimo-v2.5-pro", name: "MiMo V2.5 Pro", vendor: "Xiaomi", contextWindow: 1_000_000, toolCall: true },

@@ -1,7 +1,7 @@
 # Command Code GOAT Provider for Copilot
 
 把 **Command Code GOAT** 订阅 ($10/月) 的模型直接接入 VS Code 的 GitHub Copilot Chat，
-在模型下拉里即可选用 DeepSeek V4、Kimi K2.7、GLM-5.2、Qwen 3.8、Gemini Flash、GPT-5.6 等 30+ 个模型。
+在模型下拉里即可选用 DeepSeek V4.1 Flash、DeepSeek V4 Flash (latest)、Kimi K3、GLM-5.3、Qwen 3.8、Gemini 3.8 Flash、GPT-5.6 等 40+ 个模型。
 
 > 本扩展是把 Command Code 官方 **Provider API**（`https://api.commandcode.ai/provider/v1`，OpenAI 兼容）
 > 接入 Copilot Chat 的非官方 bridge，非 Command Code 官方出品。
